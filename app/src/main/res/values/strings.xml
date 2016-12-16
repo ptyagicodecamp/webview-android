@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="intro_text">This is sample app to demostrate webview-android library</string>
+    <string name="load_url">Load URL</string>
+    <string name="load_data">Load Data</string>
+    <string name="toggleJS">Toogle JS</string>
+</resources>
