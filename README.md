@@ -4,7 +4,7 @@ WebViewHelper library for Android platform and sample app to demonstrate the use
 
 #### Integrating from Android Studio ####
 ```
-compile 'org.ptyagicodecamp:webview-android:0.0.1'
+compile 'org.ptyagicodecamp:webview-android:0.0.2'
 ```
 
 #### Setting up ####
