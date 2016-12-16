@@ -8,12 +8,12 @@ import android.webkit.WebView;
  * Created by ptyagi on 12/15/16.
  */
 
-public class WebViewApi {
-    private static final String TAG = "webview";
+public class WebViewHelper {
+    private static final String TAG = "webview-helper";
 
     private WebView mWebView;
 
-    public WebViewApi(WebView webView) {
+    public WebViewHelper(WebView webView) {
         mWebView = webView;
     }
 

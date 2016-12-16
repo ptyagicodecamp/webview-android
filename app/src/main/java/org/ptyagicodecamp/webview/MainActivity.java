@@ -7,12 +7,12 @@ import android.webkit.WebView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import org.ptyagicodecamp.webview_lib.WebViewApi;
+import org.ptyagicodecamp.webview_lib.WebViewHelper;
 
 public class MainActivity extends AppCompatActivity {
 
     WebView webView;
-    WebViewApi webViewApi;
+    WebViewHelper webViewApi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         webView = (WebView) findViewById(R.id.webView);
-        //initialize WebViewApi
-        webViewApi = new WebViewApi(webView);
+        //initialize WebViewHelper
+        webViewApi = new WebViewHelper(webView);
     }
 
     public void loadUrl(View view) {
