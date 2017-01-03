@@ -18,14 +18,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    private void initStaticWebview() {
         webView = (WebView) findViewById(R.id.webView);
         //initialize WebViewHelper
         webViewHelper = new WebViewHelper(webView);
     }
 
+    private void initDynamicWebview() {
+        webViewHelper = new WebViewHelper(this);
+    }
+
     public void loadUrl(View view) {
-        webViewHelper.loadUrl("https://ptyagicodecamp.github.io/");
+        webViewHelper = new WebViewHelper(getApplicationContext());
+        webViewHelper.openWebviewActivity("https://ptyagicodecamp.github.io/");
+        //webViewHelper.loadUrl("https://ptyagicodecamp.github.io/");
+//        initDynamicWebview();
     }
 
     public void loadData(View view) {
